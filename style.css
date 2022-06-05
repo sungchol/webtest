@@ -1,36 +1,41 @@
-.choiceBtn {
-    line-height: 30px;
-    width: 150px;
-
+.cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid;
+    box-shadow: 0 0 0 1px;
+    line-height: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #bd874d;
+    /*padding-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
 }
-#gameDiv {
-    font-family: 'Consolas' cursive;
-    border: 3px solid;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: lightgray;
+
+#gameContainer {
+    font-family: 'permanent light' cursive;
     text-align: center;
 }
 
-.choiceBtn {
-    font: 25px "Mv boli";
-    background: black;
-    color: yellow;
+#cellContainer {
+   display: grid;
+   grid-template-columns: repeat(20, auto);
+   width: 500px;
+   margin: auto; 
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-family: "mv boli" monospace;
+    font-size: 25px;
+    color:blue;
+    background-color: bisque;
+    border: 2px solid #96993d;
+    box-shadow: 2px 2px 0 0 #583ec9;
+    border-radius: 20px;
+    margin-left: 10px;
     cursor: pointer;
-
-}
-
-.choiceBtn :hover {
-    background: #1c6ec0;
-}
-#playerText {
-    color: blue;
-}
-
-#computerText {
-    color: red;
-}
-
-#computerText :hover {
-    color: blue;
 }
