@@ -1,4 +1,9 @@
 const cellContainer = document.querySelector("#cellContainer");
+const gridLine = document.querySelector("#gridLine");
+
+const posCell = cellContainer.getBoundingClientRect();
+const posGrid = gridLine.getBoundingClientRect();
+console.log(posCell.x, posCell.y, posGrid.x, posGrid.y);
 
 //오목 셀만들기
 for(let i =0 ; i< 400; i++)
@@ -7,6 +12,14 @@ for(let i =0 ; i< 400; i++)
    myDiv.setAttribute("cellIndex", `${i}`);
    myDiv.setAttribute("class", "cell");
    cellContainer.appendChild(myDiv);
+}
+
+//gridLine 만들기
+for (let i=0; i<19*19; i++)
+{
+    const myCell = document.createElement("div");
+    myCell.setAttribute("class", "gridCell");
+    gridLine.appendChild(myCell);
 }
 
 const cells = document.querySelectorAll(".cell");
@@ -20,6 +33,7 @@ let currentPlayer = "●";
 let running = false;
 
 initializeGame();
+
 
 function initializeGame() {
     cells.forEach(cell => 
@@ -205,3 +219,4 @@ function backGame() {
         statusText.textContent = `${currentPlayer}'s turn`;
     }
 }
+
