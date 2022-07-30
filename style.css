@@ -1,0 +1,66 @@
+
+.mainContainer {
+    min-width: 580px;
+    margin: auto;
+}
+
+#gridLine {
+    
+    display: grid;
+    grid-template-columns: repeat(19, auto);
+   
+    width: 475px;
+    height: 500px;
+    z-index: 1;
+    margin: auto;
+    padding-top: 25px;
+    
+}
+
+.gridCell {
+    width: 25px;
+    height: 25px;
+    
+    border: 1px solid black;
+    box-shadow: 0 0 0 1px;
+}
+
+#gameContainer {
+    font-family: 'permanent light' cursive;
+    text-align: center;
+    z-index: 2;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(20, auto);
+    width: 500px;
+    margin: auto;
+    margin-top: -512.5px;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #00000000;
+    /* box-shadow: 0 0 0 1px; */
+    line-height: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #bd874d85;
+    
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-family: "mv boli" monospace;
+    font-size: 25px;
+    color:blue;
+    background-color: bisque;
+    border: 2px solid #96993d;
+    box-shadow: 2px 2px 0 0 #583ec9;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
