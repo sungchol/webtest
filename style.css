@@ -64,3 +64,9 @@ button {
     margin-left: 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+    #gridLine {
+        padding-left: 12.5px;
+    }
+}
